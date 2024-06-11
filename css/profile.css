@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+:root {
+  --main_color:#f1e9dc;
+  --form_color: #ddd0bb;
+  --form_border_color: #bba177;
+  --text_color: #ac946c;
+  --text_light_color: #c8b196;
+  --text_border_color: #87725a;
+  --text_light: #E4D5C3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.profile-box {
+    left: 165px;
+    width: 89%;
+    height: 100%;
+    top: 0%;
+    position: absolute;
+    color: var(--text_border_color);
+}
+
+.profile-img-box {
+    position: absolute;
+    margin-inline: 42%;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    width: 235px;
+    height: 260px;
+    text-align: center;
+}
+
+.profile-information-box {
+    background-color: var(--form_color);
+    border-radius: 25px;
+    position: absolute;
+    width: 97.1%;
+    height: 370px;
+    margin-inline: 1.5%;
+    bottom: 3%;
+}
+
+#user-cat-profile {
+    display: inline;
+    width: 190px;
+}
+
+.profile-img-box > p {
+    font-size: 30pt;
+}
+
+#profile-cat {
+    /* background-color: #87725a; */
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    margin-inline: 70px 60px;
+    margin-block: 10px;
+}
+
+.diary-count {
+    position: absolute;
+    left: 490px;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    margin-inline: 30px;
+}
+.emotion-count {
+    position: absolute;
+    right: 100px;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    margin-inline: 30px;
+}
+#text {
+    font-size: 33pt;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#counts-text {
+    font-size: 52pt;
+    margin-block: 76px 40px;
+}

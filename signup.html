@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>catdiary sign-in</title>
+    <link rel="stylesheet" href="css/signup.css" />
+  </head>
+  <body>
+    <div id="container">
+      <form class="signupBox" method="post" action="signup.php">
+        <img id="webicon" src="img/고양이_발바닥.png" alt="catpad" />
+        <div id="inputBox">
+          <div class="input-form-box">
+            <img id="mini-icon" src="img/free-icon-font-user.png" alt="user" /><input
+              type="text"
+              name="uname"
+              class="form-control"
+              placeholder="name"
+            />
+          </div>
+          <div class="input-form-box">
+            <img id="mini-icon" src="img/free-icon-font-user.png" alt="user" /><input
+              type="text"
+              name="uid"
+              class="form-control"
+              placeholder="id"
+            />
+          </div>
+          <div class="input-form-box">
+            <img id="mini-icon" src="img/free-icon-font-lock.png" alt="lock" /><input
+              type="password"
+              name="upw"
+              class="form-control"
+              placeholder="password"
+            />
+          </div>
+          <div class="catSelectBox">
+            <input type="radio" name="cat" id="cat1Choice" value="shiro"><label class="catkindLabel" for="cat1Choice"><img id="catkind" src="img/catselect/고양이선택-흰냥.png" alt="흰냥" /></label>
+            <input type="radio" name="cat" id="cat2Choice" value="nachiware"><label class="catkindLabel" for="cat2Choice"><img id="catkind" src="img/catselect/고양이선택-디냥.png" alt="디냥" /></label>
+            <input type="radio" name="cat" id="cat3Choice" value="mike"><label class="catkindLabel" for="cat3Choice"><img id="catkind" src="img/catselect/고양이선택-삼색냥.png" alt="삼색냥" /></label>
+            <input type="radio" name="cat" id="cat4Choice" value="pointed"><label class="catkindLabel" for="cat4Choice"><img id="catkind" src="img/catselect/고양이선택-샴냥.png" alt="샴냥" /></label>
+            <input type="radio" name="cat" id="cat5Choice" value="chashiro"><label class="catkindLabel" for="cat5Choice"><img id="catkind" src="img/catselect/고양이선택-치즈냥.png" alt="치즈냥" /></label>
+            <input type="radio" name="cat" id="cat6Choice" value="sabashiro"><label class="catkindLabel" for="cat6Choice"><img id="catkind" src="img/catselect/고양이선택-회색냥.png" alt="회색냥" /></label>
+          </div>
+          <div class="button-sign-box">
+            <input type="submit" class="signupButton" value="sign-up" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+

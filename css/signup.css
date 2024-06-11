@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+:root {
+  --main_color:#f1e9dc;
+  --form_color: #ddd0bb;
+  --form_border_color: #bba177;
+  --text_color: #ac946c;
+  --text_light_color: #c8b196;
+  --text_border_color: #87725a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--main_color);
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  /* transform: translate(0px, 50px); */
+  align-items: center;
+}
+
+.signupBox {
+  width: 300px;
+  text-align: center;
+}
+
+#webicon {
+  padding: 5px;
+  margin-bottom: 25px;
+  width: 100px;
+}
+
+#inputBox {
+  width: 255px;
+  margin-left: 16px;
+}
+
+.input-form-box {
+  display: flex;
+  margin-bottom: 15px;
+  /* transform: translate(165px, 65px); */
+}
+
+.input-form-box > #mini-icon {
+  display: block;
+  padding-top: 5px;
+  margin: 3px;
+  width: 25px;
+  height: 25px;
+  transform: translate(-4px, -2.5px);
+}
+
+.form-control {
+  height: 22px;
+  width: 195px;
+  background-color: var(--form_color);
+  border: 3.2px solid var(--form_border_color);
+  border-radius: 10px;
+  padding: 5px;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: larger;
+  color: var(--text_color);
+}
+
+.form-control:focus {
+  outline: none;
+}
+
+.form-control::placeholder {
+  color: var(--text_light_color);
+}
+
+.button-sign-box {
+  margin: 10px 0;
+  /* transform: translate(4px, 230px); */
+}
+
+.signupButton {
+  background-color: var(--form_color);
+  color: var(--form_border_color);
+  height: 35.5px;
+  width: 217px;
+  border: 0 solid var(--form_border_color);
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.catSelectBox {
+  /* display: flex; */
+  margin-top: 10px;
+  margin-bottom: 35px;
+  margin-left: 10px;
+}
+
+
+input[type=radio] {
+  display: none;
+  /* margin-bottom: 10px; */
+}
+
+.catkindLabel {
+  display: inline-block;
+}
+
+input:checked + label {
+  background-color: var(--form_color);
+  border-radius: 30px;
+}
+
+#catkind {
+  margin-bottom: 0px;
+  width: 50px;
+  padding: 14px;
+}
+
+

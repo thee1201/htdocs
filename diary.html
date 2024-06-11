@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WriteDiary</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/diary.css" />
+  </head>
+  <body class="Background">
+    <nav class="menubar">
+      <div class="menuButton">
+        <img id="menuCatPad" src="img/고양이_발바닥.png" alt="메뉴열기" />
+      </div>
+      <nav id="menu">
+        <ul>
+          <li><a href="main.html" target="_self">home</a></li>
+          <li><a href="diarylist.php" target="_self">diary</a></li>
+          <li><a href="profile.php" target="_self">profile</a></li>
+          <li><a href="logout.php">logout</a></li>
+        </ul>
+      </nav>
+    </nav>
+    <form class="diary-form" method="post" action="diary.php">
+      <div class="diary-date">
+        date/
+        <script>
+          date = new Date().toLocaleDateString();
+          document.write(date);
+        </script>
+      </div>
+      <div class="emotin-form">
+        <input type="radio" name="emotion" id="very-happy" value="very-happy" />
+        <label class="emotion-label" for="very-happy"
+          ><img id="emotion-img" src="img/emotion/very-happy.png" alt="매우기쁨"
+        /></label>
+        <input type="radio" name="emotion" id="happy" value="happy" />
+        <label class="emotion-label" for="happy"
+          ><img id="emotion-img" src="img/emotion/happy.png" alt="기쁨"
+        /></label>
+        <input type="radio" name="emotion" id="empty" value="empty" />
+        <label class="emotion-label" for="empty"
+          ><img id="emotion-img" src="img/emotion/empty.png" alt="기분없음"
+        /></label>
+        <input type="radio" name="emotion" id="sad" value="sad" />
+        <label class="emotion-label" for="sad"
+          ><img id="emotion-img" src="img/emotion/sad.png" alt="슬픔"
+        /></label>
+        <input type="radio" name="emotion" id="very-sad" value="very-sad" />
+        <label class="emotion-label" for="very-sad"
+          ><img id="emotion-img" src="img/emotion/very-sad.png" alt="매우 슬픔"
+        /></label>
+      </div>
+      <div class="diary-write-form">
+          <textarea name="contents" id="diary-content" placeholder="write diary..."></textarea>
+      </div>
+      <input type="submit" class="dairy-submit-button" value="submit"/>
+    </form>
+  </body>
+</html>

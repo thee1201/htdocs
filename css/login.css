@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@300..700&display=swap");
+
+:root {
+  --main_color:#f1e9dc;
+  --form_color: #ddd0bb;
+  --form_border_color: #bba177;
+  --text_color: #ac946c;
+  --text_light_color: #c8b196;
+  --text_border_color: #87725a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--main_color);
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  height: 550px;
+  transform: translate(0px, 175px);
+}
+
+.loginBox {
+  width: 250px;
+  text-align: center;
+}
+
+.input-form-box {
+  display: flex;
+  margin-bottom: 15px;
+  transform: translate(-19px, 0px);
+}
+
+.input-form-box > #idpw-icon {
+  display: block;
+  padding-top: 5px;
+  margin: 3px;
+  width: 30px;
+  height: 30px;
+  transform: translate(-3px, -2.5px);
+}
+
+.form-control {
+  height: 22px;
+  width: 440px;
+  background-color: var(--form_color);
+  border: 3.2px solid var(--form_border_color);
+  border-radius: 10px;
+  padding: 5px;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: larger;
+  color: var(--text_color);
+}
+
+.form-control:focus {
+  outline: none;
+}
+
+.form-control::placeholder {
+  color: var(--text_light_color);
+}
+
+.button-ligin-box {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.loginButton {
+  background-color: var(--form_color);
+  color: var(--form_border_color);
+  height: 35.5px;
+  width: 217px;
+  border: 0 solid var(--form_border_color);
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.signup-text {
+  color: var(--text_light_color);
+  font-size: medium;
+}
+.signup-text:hover {
+  color: var(--form_color);
+}
+
+#webicon {
+  padding: 5px;
+  margin-bottom: 30px;
+  width: 100px;
+}

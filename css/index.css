@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+:root {
+  --main_color:#f1e9dc;
+  --form_color: #ddd0bb;
+  --form_border_color: #bba177;
+  --text_color: #ac946c;
+  --text_light_color: #c8b196;
+  --text_border_color: #87725a;
+  --text_light: #E4D5C3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.Decorate {
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    bottom: 20%;
+    left: 300px;
+    margin-right: 10%;
+}
+
+#wool {
+    position: absolute;
+    width: 210px;
+    z-index: 10;
+    bottom: -5px;
+    right: 25px;
+}
+#deco-cat {
+    position: absolute;
+    width: 347px;
+    z-index: 5;
+    bottom: 0px;
+}
+#rat {
+    position: absolute;
+    width: 210px;
+    z-index: 1;
+    bottom: 16px;
+    left: -70px;
+}
+
+.LinkButton {
+    position: absolute;
+    right: 430px;
+    bottom: 25%;
+    width: 196px;
+    height: 55%;
+    text-align: center;
+}
+
+#indexCatPad {
+    width: 180px;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+#title-text {
+    color: var(--text_border_color);
+    font-size: 34pt;
+    padding: 5px;
+    margin-bottom: 50px;
+
+}
+
+.LoginlinkButton {
+    background-color: var(--form_color);
+    width: 100%;
+    padding: 14px 0;
+    border: none;
+    border-radius: 20px;
+}
+
+#LoginLink {
+    position: relative;
+    text-decoration: none;
+    font-size: 23pt;
+    color: var(--form_border_color);
+    padding-block: inherit;
+}
